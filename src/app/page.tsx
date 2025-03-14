@@ -1,10 +1,3 @@
 export default function Home() {
-  return (
-    <main>
-      Sr Aqua Modified
-      <p>
-        <li></li>
-      </p>
-    </main>
-  );
+  return <main className="bg-primary h-screen"> Main Section</main>;
 }
