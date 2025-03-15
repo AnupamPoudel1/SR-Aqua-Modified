@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo/logo.jpg";
 import { RiMenuFoldLine } from "react-icons/ri";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -42,7 +42,7 @@ export default function Header() {
   const [navOpen, setNavOpen] = useState<boolean>(false);
 
   return (
-    <header className="px-4 py-3 md:px-12 md:py-4 lg:px-20 lg:py-4 relative w-full flex z-10">
+    <header className="px-4 md:px-12 lg:px-20 2xl:px-40 relative w-full overflow-x-clip flex z-50">
       <div className="flex w-full items-center justify-between">
         {/* Logo */}
         <div className="logo">
@@ -106,7 +106,7 @@ export default function Header() {
       {/* Small Screen Navbar */}
       <nav
         className={twMerge(
-          "absolute flex lg:hidden flex-col w-full top-full left-0 transition-transform duration-300 rounded-md overflow-hidden",
+          "absolute flex lg:hidden flex-col w-full top-full left-0 transition-transform duration-300 rounded-md overflow-hidden bg-primary",
           navOpen ? "translate-x-0" : "translate-x-full"
         )}
       >

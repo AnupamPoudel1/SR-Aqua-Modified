@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 @theme {
+  /* fonts */
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
 
-  --color-primary: #FEFEFE;
-  --color-secondary: #005DB0;
+  /* colors */
+  --color-primary: #fefefe;
+  --color-secondary: #005db0;
 }
