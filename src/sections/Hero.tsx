@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <section className="relative flex justify-center items-center w-full h-[70vh] md:h-[60vh] lg:h-[80vh] px-4 py-3 md:px-20 md:py-4 lg:px-40 2xl:px-44 lg:py-4">
+    <section className="relative flex justify-center items-center w-full h-[70vh] md:h-[60vh] lg:h-[80vh] px-4 py-3 md:px-8 md:py-4 lg:px-40 2xl:px-44 lg:py-4">
       <div className="bg-image absolute w-full h-full">
         <Image
           src={background}
@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
         <Link
           href={"/about"}
-          className="px-4 py-2 bg-secondary text-primary w-max rounded-md hover:text-secondary hover:bg-primary transition duration-300 mt-5 md:text-lg lg:text-xl flex justify-center items-center gap-3 hover:gap-5"
+          className="px-6 py-3 bg-secondary text-primary w-max rounded-3xl hover:text-secondary hover:bg-primary transition duration-300 mt-5 md:text-lg lg:text-xl flex justify-center items-center gap-3 hover:gap-5"
         >
           Learn More <FaArrowRightLong />
         </Link>

@@ -9,3 +9,55 @@
   --color-primary: #fefefe;
   --color-secondary: #005db0;
 }
+
+/* Custom CSS */
+
+.wave {
+  background: url(../../public/wave1.png);
+  background-size: 3000px 384px;
+}
+
+.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 4;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 3;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.wave3 {
+  animation: animate 30s linear infinite;
+  z-index: 2;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 1;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 3000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -3000px;
+  }
+}
